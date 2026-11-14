@@ -5,7 +5,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_chroma import Chroma
 
-from vectorstore import similarity_search_with_filter
+from scripts.vectorstore import similarity_search_with_filter
 
 load_dotenv()
 
@@ -13,7 +13,7 @@ class EnterpriseAgent:
     def __init__(
         self,
         vector_db: Chroma,
-        model_name: str = "gemini-3.6-flash",
+        model_name: str = os.getenv("GEMINI_CHAT_MODEL"),
     ):
         api_key = os.getenv("GEMINI_API_KEY")
 
@@ -68,7 +68,9 @@ User Query: "{query}"
 
 Output ONLY the search queries separated by a newline. Do not include numbered lists or extra punctuation."""
 
-        response = self.llm.invoke([HumanMessage(content=prompt)])
+        response = self.llm.invoke([
+            SystemMessage(content="You are an enterprise document assistant."),
+            HumanMessage(content=prompt)])
 
         content = self._extract_text(response.content)
 

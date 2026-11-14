@@ -1,0 +1,13 @@
+transaction_id,date,region,city,product,quantity,unit_price,revenue
+TXN-1001,2026-07-03,North,Delhi,Enterprise Suite,2,50000,100000
+TXN-1002,2026-07-08,South,Hyderabad,Analytics Pro,5,12000,60000
+TXN-1003,2026-07-15,West,Mumbai,Cloud Basic,8,5000,40000
+TXN-1004,2026-07-22,East,Kolkata,Analytics Pro,3,12000,36000
+TXN-1005,2026-08-02,North,Chandigarh,Cloud Basic,10,5000,50000
+TXN-1006,2026-08-11,South,Bengaluru,Enterprise Suite,3,50000,150000
+TXN-1007,2026-08-19,West,Pune,Analytics Pro,7,12000,84000
+TXN-1008,2026-08-27,East,Bhubaneswar,Cloud Basic,6,5000,30000
+TXN-1009,2026-09-04,North,Jaipur,Analytics Pro,4,12000,48000
+TXN-1010,2026-09-12,South,Chennai,Cloud Basic,12,5000,60000
+TXN-1011,2026-09-18,West,Ahmedabad,Enterprise Suite,2,50000,100000
+TXN-1012,2026-09-26,East,Patna,Analytics Pro,5,12000,60000

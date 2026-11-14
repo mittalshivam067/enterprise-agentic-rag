@@ -4,18 +4,20 @@ from dotenv import load_dotenv
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from pathlib import Path
 
 # Load environment variables from .env
 load_dotenv()
 
-PERSIST_DIRECTORY = "./chroma_db"
+BASE_DIR = Path(__file__).resolve().parent.parent
+PERSIST_DIRECTORY = str(BASE_DIR / "storage" / "chroma_db")
 
 def get_embedding_function() -> GoogleGenerativeAIEmbeddings:
     """Initialize the Gemini embedding model."""
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY is not set in the environment variables.")
-    return GoogleGenerativeAIEmbeddings(model="gemini-embedding-001", google_api_key=api_key)
+    return GoogleGenerativeAIEmbeddings(model=os.getenv("GEMINI_EMBEDDING_MODEL"), google_api_key=api_key)
 
 def build_vector_store(chunks: List[Document], persist_dir: str = PERSIST_DIRECTORY) -> Chroma:
     """

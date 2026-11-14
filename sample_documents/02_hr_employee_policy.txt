@@ -1,0 +1,24 @@
+NORTHSTAR TECHNOLOGIES
+EMPLOYEE POLICY HANDBOOK
+All policies in this document are fictional and created for RAG testing.
+
+Working hours
+The standard working schedule is Monday to Friday, 9:00 AM to 6:00 PM.
+Employees should coordinate schedule changes with their manager.
+A one-hour lunch break is recommended.
+
+Leave policy
+Full-time employees receive 20 days of paid annual leave per calendar year.
+Employees receive 10 days of paid sick leave per calendar year.
+Leave requests should be submitted through the HR portal at least five working days in advance when possible.
+Emergency sick leave should be reported to the employee's manager as soon as practical.
+
+Remote work
+Employees may work remotely up to two days per week with manager approval.
+Some roles may require additional office attendance based on business needs.
+Employees working remotely must remain reachable during their agreed working hours.
+
+Learning and development
+Each employee has an annual learning budget of $1,000.
+The budget may be used for approved courses, technical certifications, and job-related conferences.
+Manager approval is required before purchasing training.
